@@ -38,7 +38,7 @@ var highscores =[{
 function play(question, answer){
   var userAnswer = readlineSync.question(question);
   
-  if(userAnswer.ignorecase === answer.ignorecase){
+  if(userAnswer.toLowerCase() === answer.toLowerCase()){
     console.log("You are Right");
     score=score+2;
   }
