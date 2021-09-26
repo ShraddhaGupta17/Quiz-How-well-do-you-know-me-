@@ -10,6 +10,12 @@ function welcome(){
 }
 
 var questions = [{
+  question:"What is my nickname? ",
+  answer:"Nidhi"
+},{
+  question:"What is my birth date? ",
+  answer:"7 Jan"
+},{
   question:"Where do I live? ",
   answer:"Varanasi"
 },{
@@ -39,11 +45,11 @@ function play(question, answer){
   var userAnswer = readlineSync.question(question);
   
   if(userAnswer.toLowerCase() === answer.toLowerCase()){
-    console.log("You are Right");
+    console.log("Correct.. Well done!");
     score=score+2;
   }
   else{
-    console.log("You are Wrong");
+    console.log("OOPS! You are Wrong");
     score--;
   }
   console.log("Current Score is: "+ score);
