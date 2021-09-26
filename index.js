@@ -34,11 +34,11 @@ var questions = [{
 
 var highscores =[{
   name: "Shraddha",
-  score: 10,
+  score: 14,
 },
 {
   name: "Neelam",
-  score: 7,
+  score: 8,
 }];
 
 function play(question, answer){
@@ -70,6 +70,7 @@ function showScores(){
   else{
     console.log("OOPS! You SCORED: ", score);
   }
+  console.log("------------------------");
   console.log("Check out the high scores, if you should be there ping me and I'll update it");
 
   highscores.map(score => console.log(score.name, " : ", score.score))
